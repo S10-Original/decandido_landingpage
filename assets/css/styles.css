@@ -1,0 +1,276 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    background-color: orangered;
+    color: whitesmoke;
+}
+
+#header{
+    width: 100%;
+    height: 200px;
+    background-color: orange;
+    text-align: center;
+    line-height: 200px;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/835/665/277/arbol-frutas-naranjas-naturaleza-wallpaper-preview.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#nav{
+    width: 100%;
+    background-color: rgb(201, 47, 0);
+}
+
+#nav ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#nav ul li{
+    list-style: none;
+}
+
+#nav ul li a{
+    text-decoration: none;
+    display: table;
+    padding: 20px 45px 20px 45px;
+    border-right: 0.5px solid black;
+    border-left: 0.5px solid black;
+}
+
+#nav ul li a:hover{
+    background-color: #ffffff;
+    color: black;
+    border-radius: 15%;
+    border: #000000 1px solid;
+}
+
+#cuerpo1, #cuerpo2, #cuerpo5, #cuerpo6{
+    box-sizing: border-box;
+}
+
+.columna{
+    float: left;
+    width: 49%;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: center;
+}
+
+.fila:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img{
+    width: 100%;
+}
+
+#cuerpo3, #cuerpo4{
+    width: 100%;
+    height: 100%;
+    background-color: orangered;
+    padding: 2px 2px 2px 2px;
+}
+
+#footer{
+    background-color: rgb(201, 47, 0);
+}
+
+hr{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color:white;
+    height: 1px;
+}
+
+.texto-centrado{
+    text-align: center;
+}
+
+.texto-justificado{
+    text-align: justify;
+}
+
+.imagen-centrada{
+    display: block;
+    margin: auto;
+}
+
+label{
+    font-weight: 800;
+}
+
+input[type=text]{
+    width: 350px;
+    height: 25px;
+    border-radius: 5%;
+    padding-left: 6px;
+}
+
+input[type=email]{
+    width: 350px;
+    height: 25px;
+    border-radius: 5%;
+    padding-left: 6px;
+}
+
+textarea{
+    width: 350px;
+    border-radius: 5%;
+    padding-left: 6px;
+    padding-top: 6px;
+}
+
+input[type=submit]{
+    width: 250px;
+    height: 30px;
+    border-radius: 5%;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+}
+
+input[type=reset]{
+    width: 100px;
+    height: 30px;
+    border-radius: 5%;
+    background-color: rgb(6, 196, 54);
+    color: white;
+    font-weight: bold;
+}
+
+#arriba{
+    background-color: greenyellow;
+    color: red;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    right: 12px;
+    position: fixed;
+    bottom: 210px;
+    border-radius: 100%;
+}
+
+#arriba a{
+    text-decoration: none;
+    color: rgb(241, 21, 175, 0.822);
+}
+
+#arriba hover{
+    background-color: rgb(241, 21, 175, 0.822);
+    color: white;
+}
+
+#arriba a:hover{
+    color: white;
+}
+
+
+@media(max-width:890px){
+    #header{
+        background-image: url(https://c4.wallpaperflare.com/wallpaper/835/665/277/arbol-frutas-naranjas-naturaleza-wallpaper-preview.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+    #nav{
+        width: 100%;
+        height: 300px;
+        transition: all 0.5s;
+        display: table;
+        background-color: rgb(201, 47, 0);
+    }
+    
+    #nav ul{
+        padding: 0px;
+        margin: 0px;
+        flex-direction: column;
+        border: white;
+        
+    }
+    
+    #nav ul li{
+        border-top: 1px solid white;
+        width: 100%;
+        list-style: none;
+    }
+    
+    #nav ul li a{
+        text-decoration: none;
+        display: table;
+        padding: 20px 45px 20px 45px;
+        color: white;
+        width: 100%;
+    }
+    
+    #nav ul li a:hover{
+        background-color: #ffffff;
+        color: black;
+        border: 1px #000000 solid;
+        width: 100%;
+    }
+
+    .columna{
+        float: left;
+        width: 40%;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+
+    label{
+        font-weight: 350;
+    }
+    
+    input[type=text]{
+        width: 150px;
+        height: 25px;
+        border-radius: 5%;
+        padding-left: 6px;
+    }
+    
+    input[type=email]{
+        width: 150px;
+        height: 25px;
+        border-radius: 5%;
+        padding-left: 6px;
+    }
+    
+    textarea{
+        width: 150px;
+        border-radius: 5%;
+        padding-left: 6px;
+        padding-top: 6px;
+    }
+    
+    input[type=submit]{
+        width: 75px;
+        height: 30px;
+        border-radius: 5%;
+        background-color: cornflowerblue;
+        color: white;
+        font-weight: bold;
+    }
+    
+    input[type=reset]{
+        width: 50px;
+        height: 30px;
+        border-radius: 5%;
+        background-color: rgb(6, 196, 54);
+        color: white;
+        font-weight: bold;
+    }
+}
